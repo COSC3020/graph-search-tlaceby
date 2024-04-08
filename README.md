@@ -14,7 +14,7 @@ Implement the algorithm. You can choose any of the data structures we covered
 (adjacency matrix or adjacency list) for the implementation. Your function
 should return the list of nodes on the path from the start to the target (not
 the list of nodes that you looked at during the search). If start and target are
-the same, it should return a list with only that node. If there is no parth from
+the same, it should return a list with only that node. If there is no path from
 the start to the target, it should return an empty list. Start with the template
 I provided in `code.js` and test your new function.
 
@@ -25,7 +25,10 @@ the function and run automatically when you commit through a GitHub action.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
-answer, including your reasoning, to this markdown file.
+answer, including your reasoning, to this markdown file. 
+
+Sol:
+Foreach node in the graph, we traverse all of it's unvisited neighbors. This means our $\Theta()$ complexity is $\Theta(E + V)$. $E$ represents all edges in the graph and $V$ represents all verticies in the graph.
 
 ## Bonus
 
