@@ -1,14 +1,16 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/M24O3lId)
+
 # Search in Graphs
 
 Recall the pseudocode for Depth-First Search:
 
 Given a graph, a start node, and a node we're looking for:
+
 - starting at the start node, while unvisited nodes remain
-    - if current vertex $v$ is the node we're looking for, return it
-    - mark $v$ as visited
-    - for each edge $(v,w)$
-        - recursively process $w$ unless marked visited
+  - if current vertex $v$ is the node we're looking for, return it
+  - mark $v$ as visited
+  - for each edge $(v,w)$
+    - recursively process $w$ unless marked visited
 
 Implement the algorithm. You can choose any of the data structures we covered
 (adjacency matrix or adjacency list) for the implementation. Your function
@@ -25,7 +27,7 @@ the function and run automatically when you commit through a GitHub action.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
-answer, including your reasoning, to this markdown file. 
+answer, including your reasoning, to this markdown file.
 
 Sol:
 Foreach node in the graph, we traverse all of it's unvisited neighbors. This means our $\Theta()$ complexity is $\Theta(E + V)$. $E$ represents all edges in the graph and $V$ represents all verticies in the graph.
@@ -33,3 +35,9 @@ Foreach node in the graph, we traverse all of it's unvisited neighbors. This mea
 ## Bonus
 
 Implement and analyze breadth-first search.
+
+## Resources
+
+I didnt directly use any particuliar video for this challenge. However I have watched almost all videos in the series and was able to come up with this and many other problem solutions via things learned from this series.
+
+- https://www.youtube.com/watch?v=DgXR2OWQnLc&list=PLDV1Zeh2NRsDGO4--qE8yH72HFL1Km93P
